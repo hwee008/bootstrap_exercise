@@ -2,6 +2,13 @@
 <html lang="en">
 
 <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <title>Ristorante Con Fusion</title>
 </head>
 
@@ -95,7 +102,15 @@
            </div>
         </div>
     </footer>
+    <!-- Js is placed at the bottom of the page because we want the css to be loaded first
+         when loading a page at the web server , javascript need to be executed to make changes 
+        to the web page , to prevent waiting we load css firs  -->
 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+   
 </body>
 
 </html>
