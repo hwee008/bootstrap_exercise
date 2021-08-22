@@ -6,10 +6,29 @@
 .row-content{
     margin: 0px auto;
     padding:50px 0px 100px 0px;
-    border-bottom: 1px ridge;
+    border-bottom: 1px ridge; 
     min-height: 400px;
 }
 
+.row-content-about_us{
+    margin: 0px auto;
+    padding:20px 0px 10px 0px; /* top , right, btm, left */
+    min-height: 20px;
+}
+
+.row-content-our_history{
+    margin: 0px auto;
+    padding: 50px 0px 50px 0px; 
+    border-bottom: 1px ridge;
+    min-height: 0px;
+}
+
+.row-content-coporate_leadership{
+    margin: 0px auto;
+    padding:50px 0px 40px 10px; /* top , right, btm, left */
+    border-bottom: 1px ridge; /* ridge draws a horizontal line */
+    min-height: 400px;
+}
 .footer{
     background-color: #D1C4E9;
     margin : 0px auto;
@@ -19,7 +38,7 @@
 .jumbotron{
     padding:70px 30px 70px 30px;
     margin :0px auto;
-    background-color :#9575CD !important ;
+    background:#9575CD;
     color: floralwhite
 }
 
