@@ -17,6 +17,45 @@
 </head>
 
 <body>
+    <!-- navbar-expand-sm implies toggable collapsable action for xs and small screen sizes-->
+    <nav class = "navbar navbar-dark navbar-expand-sm  fixed-top">  
+        <button class ="navbar-toggler" type = "button" data-toggle="collapse" data-target="#Navbar">
+            <span class = "navbar-toggler-icon"></span>
+        </button>
+        <div class = "container"> <!-- anything enclosed in this container will be displayed in the same width as the webpage-->
+            <a class = "navbar-brand mr-auto"  href = "#"> Ristorante con Fusion <!--Company name etc.--> 
+                <!-- href implies a hyper link to a particular destination-->
+            </a>    
+            <div class = "collapse navbar-collapse" id="Navbar"> <!-- id allows target to find it-->
+                <ul class ="navbar-nav mr-auto">  <!--mr auto pushes content as left as possible of nav bar-->
+                    <!-- Nav-item 1-->
+                    <li class ="nav-item active"> <!-- active highlights the page that user is at -->
+                        <a class="nav-link" href ="#">
+                            Home
+                        </a>    
+                    </li>
+                    <!-- Nav-item 2-->
+                    <li class ="nav-item">
+                        <a class="nav-link" href ="./aboutus.html">
+                            About
+                        </a>    
+                    </li>
+                    <!-- Nav-item 3-->
+                    <li class ="nav-item">
+                        <a class="nav-link" href ="#">
+                            Menu
+                        </a>    
+                    </li>
+                    <!-- Nav-item 4-->
+                    <li class ="nav-item">
+                        <a class="nav-link" href ="#">
+                            Contact
+                        </a>    
+                    </li>
+                </ul>
+            </div>  
+        </div>
+    </nav>
     <!-- Allows seperation of the content of jumbotron from the rest of the page -->
     <header class = "jumbotron">
         <div class = "container">
@@ -79,7 +118,7 @@
                     <h5>Links</h5>
                     <ul class = "list-unstyled">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="./ab">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>

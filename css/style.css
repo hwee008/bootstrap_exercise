@@ -47,3 +47,18 @@
     margin : 0px;
     color : #0F0F0F
 }
+
+body{
+    padding:50px 0px 0px 0px ;
+    z-index : 0;
+}
+
+.navbar-dark{
+    background-color:#5d34a5;
+}
+
+.navbar-darkcolor{
+    background-color:#5d34a5;
+}
+
+

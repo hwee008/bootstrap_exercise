@@ -17,10 +17,46 @@
 </head>
 
 <body>
+    <nav class = "navbar navbar-dark navbar-expand-sm fixed-top">  
+        <button class ="navbar-toggler" type = "button" data-toggle="collapse" data-target="#Navbar">
+            <span class = "navbar-toggler-icon"></span>
+        </button>
+        <div class = "container"> <!-- anything enclosed in this container will be displayed in the same width as the webpage-->
+            <a class = "navbar-brand mr-auto"  href = "./index.html"> Ristorante con Fusion <!--Company name etc.--> 
+                <!-- href implies a hyper link to a particular destination-->
+            </a>    
+            <div class = "collapse navbar-collapse" id="Navbar"> <!-- id allows target to find it-->
+                <ul class ="navbar-nav mr-auto">  <!--mr auto pushes content as left as possible of nav bar-->
+                    <!-- Nav-item 1-->
+                    <li class ="nav-item"> <!-- active highlights the page that user is at -->
+                        <a class="nav-link" href ="./index.html">
+                            Home
+                        </a>    
+                    </li>
+                    <!-- Nav-item 2-->
+                    <li class ="nav-item active">
+                        <a class="nav-link" href ="#">
+                            About
+                        </a>    
+                    </li>
+                    <!-- Nav-item 3-->
+                    <li class ="nav-item">
+                        <a class="nav-link" href ="#">
+                            Menu
+                        </a>    
+                    </li>
+                    <!-- Nav-item 4-->
+                    <li class ="nav-item">
+                        <a class="nav-link" href ="#">
+                            Contact
+                        </a>    
+                    </li>
+                </ul>
+            </div>  
+        </div>
+    </nav>
     <header class="jumbotron">
         <div class="container">
-            <div class="row row-header">
-                <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
@@ -30,8 +66,13 @@
         </div>
     </header>
 
-    <div class = "container" > 
+    <div class = "container"   > 
         <div class = "row row-content-about_us">
+            <ol class= "col-12 breadcrumb">
+                <li class="breadcrumb-item"><a href = "./index.html">Home</a></li>
+                <li class="breadcrumb-item active">About us</li>
+
+            </ol>
             <div class = "col-12 col-sm-12 align-self-start">
                <h3>About Us</h3>
                <hr>
@@ -80,7 +121,7 @@
                 <div class="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="./index.html">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
