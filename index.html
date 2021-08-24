@@ -25,8 +25,8 @@
             <span class = "navbar-toggler-icon"></span>
         </button>
         <div class = "container"> <!-- anything enclosed in this container will be displayed in the same width as the webpage-->
-            <a class = "navbar-brand mr-auto"  href = "#"> Ristorante con Fusion <!--Company name etc.--> 
-                <!-- href implies a hyper link to a particular destination-->
+            <a class = "navbar-brand mr-auto"  href = "#"> <!-- href implies a hyper link to a particular destination-->
+                <img src="img/logo.png" height= "30" width ="41"> <!--Display Company logo etc.--> 
             </a>    
             <div class = "collapse navbar-collapse" id="Navbar"> <!-- id allows target to find it-->
                 <ul class ="navbar-nav mr-auto">  <!--mr auto pushes content as left as possible of nav bar-->
@@ -81,38 +81,67 @@
     </header>
 
     <div class = "container">
+        <!-- Row 1-->
         <div class ="row row-content align-items-center">
             <!-- Occupy 12 coloumn for xs , small 4 and medium to xl is 3 coloumns-->
             <div class = "col-12 col-sm-4 order-sm-last col-md-3">
-                    <h3>Our Lipsmacking Culinary Creations</h3>
-                </div>
+                <h3>Our Lipsmacking Culinary Creations</h3>
+            </div>
                 <!-- Stacks below the coloumn for xs , Occupy remaining coloumns for small 8 , 
                     medium -->
                 <div class = "col col-sm col-md">
-                    <h2>Uthappizza</h2>
-                    <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                    <div class = "media">
+                        <!--3 MARGINS to the right-->
+                        <img class ="d-flex mr-3 img-thumbnail align-self-center" 
+                        src="img/Uthappizza.png" alt = "Uthappizza"> 
+                         <!--alt attribute provides alternative information for an image if a user for some reason cannot view i-->
+                        <div class ="media-body">
+                            <!--Margin top = 0 -->
+                            <h2 class ="mt-0">Uthappizza</h2>
+                            <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                        </div>
+                    </div>
                 </div>
         </div>
+    
 
-
+        <!--Row 2-->
         <div class ="row row-content align-items-center">
-            <div class = "col-12 col-sm-4 order-sm-first col-md-3">
+            <div class = "col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
             <div class = "col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class = "media">
+                    <!--Image-->
+                    <img class="d-flex mr-3 img-thumbnail align-self-center"
+                    src ="img/alberto.png" alt = "Weekend Grand Buffet">
+                    <!--Body of the media-->
+                    <div class ="media-body">
+                        <!--Margin top = 0 -->
+                        <h2 class = "mt-0">Weekend Grand Buffet</h2>
+                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                </div>
             </div>
         </div>
 
+        <!-- Row 3-->
         <div class ="row row-content align-items-center">
             <div class = "col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Meet our Culinary Specialists</h3>
             </div>
             <div class = "col col-sm order-sm-first col-md">
-                <h2>Alberto Somayya</h2>
-                <h4>Executive Chef</h4>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                <div class = "media">
+                    <!--Image-->
+                    <img class="d-flex mr-3 align-self-center img-thumbnail" 
+                    src = "img/alberto.png" alt="alberto">
+                    <!--Body of the media-->
+                    <div class = "media-body">
+                        <h2 class= "mt-0">Alberto Somayya</h2>
+                        <h4>Executive Chef</h4>
+                        <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
