@@ -57,8 +57,32 @@ body{
     background-color:#5d34a5;
 }
 
-.navbar-darkcolor{
-    background-color:#5d34a5;
-}
+input[type="radio"]{
+    margin: 0 10px 0 10px;
+  }
 
+  b {
+    margin: 0 22px 0 0px;
+  }
+
+#reserve{ /* id of button in index.html */
+    border: none;
+    background-color: #35baf6;
+    margin-left: 180px;
+    padding: 12px 10px 12px 10px; /* top , right, btm, left */
+    color : white;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+  
+  /* On mouse-over */
+  .btn:hover {background: #eee;}
+  .reserve {color: white;}
+
+#card_reserve_table_header{
+
+    color: white !important;
+    background-image: linear-gradient(brown,#FFD400 ) !important;
+}
 
