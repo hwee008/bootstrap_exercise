@@ -88,9 +88,16 @@ input[type="radio"]{
 }
 
 #reserve_top{
-    margin-top: 50px;
+    margin-top: 20px;
     padding-left: 50px;
     padding-right: 50px;
     background-color: #FFD400;
     font-size: 20px;
+}
+
+.tab-content{
+    border-left :1px solid #ddd;
+    border-right:1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding :10px;
 }
