@@ -59,9 +59,59 @@
                         </a>    
                     </li>
                 </ul>
+                <span class= "navbar-text">
+                    <a data-toggle="modal" data-target = "#loginModal">
+                        <span class = "fa fa-sign-in"></span>
+                        Login
+                    </a>
+                </span>
             </div>  
         </div>
     </nav>
+    <!--dialog means displayed on top of the page and fade to the screen-->
+    <div id="loginModal" class ="modal fade" role = "dialog">
+        <div class ="modal-dialog modal-lg" role ="content">
+            <!-- Modal Content-->
+            <div class ="modal-content">
+                <!--Modal header-->
+                <div class ="modal-header">
+                    <!--Button that is used to close the modal-->
+                    <h4 class ="modal-title">Login</h4>
+                    <button type= "button" class="close" data-dismiss="modal">
+                        &times;
+                     </button>
+                </div>
+                <!--Modal Body-->
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <!-- Used to dismiss the Modal-->
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <!-- Used to submit the form-->
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Allows seperation of the content of jumbotron from the rest of the page -->
     <header class = "jumbotron">
         <div class = "container">
@@ -81,7 +131,11 @@
                     <div class ="col-12 col-sm-3 align-self-center">
                         <div class=" col- mx-auto"></div>
                             <a href = "#link_reserve_table"> <!--Jump From  -->
-                                <button class="btn " type="button" id="reserve_top">Reserve Table</button>
+                                <button class="btn " type="button" id="reserve_top"
+                                data-toggle = "tooltip" data-html="true" 
+                                title="Or Call us at <br><strong>+65 12345678</strong>"
+                                data-placement = "bottom">Reserve Table</button>
+                                <!--data-html allows the tooltip to be styled with html-->
                             </a>
                         </div>
                     </div>
@@ -273,6 +327,12 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--jQuery syntax-->
+    <script> 
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
    
 </body>
 
