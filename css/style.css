@@ -63,12 +63,28 @@ input[type="radio"]{
     border: none;
     background-color: #358ff6;
     margin-left: 187px;
-    margin-top : 10px;
-    padding: 10px 10px 10px 10px; /* top , right, btm, left */
     color : white;
+    align-items: center;
+}
+
+
+#cancel{
     font-size: 16px;
-    cursor: pointer;
-    display: inline-block;
+}
+
+#btn_login_ReserveTable{
+    background: orange;
+    font-size: 20px;
+    color: white;
+    padding-bottom: 12px;
+}
+
+#btn_login_login{
+    background: #5d34a5;
+    color:white;
+    font-size: 20px;
+    padding-top: 5px;
+    margin-bottom: 5px;
 }
   
   /* On mouse-over */
@@ -81,6 +97,9 @@ input[type="radio"]{
     background-image: linear-gradient(brown,#FFD400 ) !important;
 }
 
+#card_reserve_table{
+    background: #9575CD;
+}
 
 .tab-content{
     border-left :1px solid #ddd;
@@ -89,21 +108,36 @@ input[type="radio"]{
     padding :10px;
 }
 
-.carousel{
+.modal{
+    margin-top: 0px;
+    }
+    .modal-header{
+            background: #5d34a5;
+            color: white;
+     }
+     .modal-body{
+         background: #9575CD;
+     }
+
+
+.carousel {
     background: #512DA8;
-}
-
-.carousel-item{
-    height:300px;
-}
-
-.carousel-item img{
-    position:absolute;
+  }
+  .carousel .carousel-item {
+    height: 300px;
+  }
+  .carousel .carousel-item img {
+    position: absolute;
     top: 0;
+    left: 0;
     min-height: 300px;
-
-}
-
+  }
+  #carouselButton {
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+  }
 #Card_Contents{
     margin-left: 33px;
     font-size: 14px;
@@ -151,3 +185,4 @@ input[type="radio"]{
     padding: 20px;
     font-size: 23px;
 }
+

@@ -60,9 +60,9 @@
                     </li>
                 </ul>
                 <span class= "navbar-text">
-                    <a data-toggle="modal" data-target = "#loginModal">
+                    <a>
                         <span class = "fa fa-sign-in"></span>
-                        Login
+                        <button type="button" id="btn_login_login" class="btn btn-default" onclick="openModal()">Login</button>
                     </a>
                 </span>
             </div>  
@@ -77,7 +77,7 @@
                 <div class ="modal-header">
                     <!--Button that is used to close the modal-->
                     <h4 class ="modal-title">Login</h4>
-                    <button type= "button" class="close" data-dismiss="modal">
+                    <button type= "button" class="close" onclick="closeModal()" >
                         &times;
                      </button>
                 </div>
@@ -103,7 +103,7 @@
                         </div>
                         <div class="form-row">
                             <!-- Used to dismiss the Modal-->
-                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="button" onclick="closeModal()" class="btn btn-secondary btn-sm ml-auto"  >Cancel</button>
                             <!-- Used to submit the form-->
                             <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
                         </div>
@@ -134,16 +134,13 @@
                             <div class  = "modal-content">
                                 <div class ="modal-header">
                                     <h4 class ="modal-title">Reserve Table</h4>
-                                    <button type= "button" class="close" data-dismiss="modal">
+                                    <button type= "button" class="close" onclick="closeModal_Table()" >
                                         &times;
-                                    </button>
+                                     </button>
                                 </div>
                                 <!--Modal Body-->
                                 <div class="modal-body">
                                     <div class ="card" id="card_reserve_table">
-                                        <h3 class= "card-header text-white "id= "card_reserve_table_header">
-                                            Reserve a table <!--Card  Title-->
-                                        </h3>
                                         <div class = "card-body">
                                             <form>
                                                 <!-- For Number of Guests 1-6 -->
@@ -169,7 +166,7 @@
                                                  <label for="six">6</label>
                                                  <div col sm-12>
                                                     <b id ="Card_Contents_Section">Section</b>
-                                                    <input type="radio" class="btn-check" name="options" id="option1" autocomplete="On" checked>
+                                                    <input type="radio"  class="btn-check" name="options" id="option1" autocomplete="On" checked>
                                                     <label class="btn btn-success " for="option1"><b>Non-Smoking</b></label>
 
                                                     <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
@@ -194,6 +191,7 @@
                                             </form>
                                             <a id="link_reserve_table"> <!--Jump To here-->
                                                 <button class="btn reserve" id = "reserve">Reserve</button>
+                                                <button type="button" id= "cancel" onclick="closeModal_Table()" class="btn btn-secondary btn-sm ml-auto"  >Cancel</button>
                                             </a>
                                         </div>
                                     </div>
@@ -203,9 +201,9 @@
                     </div>
                     
                     <span class= "navbar-text">
-                        <a id ="ReserveTableModalText" data-toggle="modal" data-target = "#ReserveTableModal">
+                        <a id ="ReserveTableModalText" >
                             <span class = "fa fa-book"></span>
-                            Reserve Table
+                            <button type="button" id="btn_login_ReserveTable" class="btn btn-default" onclick="openModal_Table()">Reserve Table</button>
                         </a>
                     </span>
                 </div>
@@ -422,6 +420,35 @@
                 $('#mycarousel').carousel('cycle');
             });
         });
+    </script>
+    <script>
+        // For loginModal
+        function openModal(){
+          $(document).ready(function(){
+             $("#loginModal").modal();
+          });
+      }
+
+     function closeModal() {
+          $(document).ready(function(){
+             $("#loginModal").modal('hide');
+          });  
+      }
+    </script>
+
+    <script>
+        //For ReserveTableModal
+        function openModal_Table(){
+          $(document).ready(function(){
+             $("#ReserveTableModal").modal();
+          });
+      }
+
+     function closeModal_Table() {
+          $(document).ready(function(){
+             $("#ReserveTableModal").modal('hide');
+          });  
+      }
     </script>
 </body>
 
